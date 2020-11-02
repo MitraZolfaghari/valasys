@@ -6,6 +6,9 @@
     "Search Text": "محتوای مورد نظرتان را جستجو کنید",
     "Admin Login": "ورود مدیریت",
     "Username": "نام کاربری",
-    "Password": "رمز عبور"
+    "Password": "رمز عبور",
+    "Home": "خانه",
+    "Dashboard": "داشبورد",
+    "Logout": "خروج"
 
 }

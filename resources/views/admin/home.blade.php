@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.admin.master')
+
+@section('body-class', 'sidebar-mini')
 
 @section('content')
     <div class="container">
