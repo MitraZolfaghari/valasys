@@ -36,7 +36,14 @@
 <div class="wrapper">
     @include('shared.header')
     @include('shared.sidebar')
-    @yield('page')
+    <div class="content-wrapper">
+        <main class="content">
+            <div class="container-fluid">
+                @yield('content')
+            </div>
+            <!-- ./container-fluid -->
+        </main>
+    </div>
 </div>
 
 <!-- Scripts -->

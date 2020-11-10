@@ -23,7 +23,7 @@
                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="/admin" class="nav-link" title="{{__('Dashboard')}}">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fas fa-tachometer-alt"></i>
                         <p>{{__('Dashboard')}}</p>
                     </a>
                 </li>
@@ -37,17 +37,23 @@
                     </a>
                     <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link" title="{{__('admin.Managers')}}">
+                                <a href="/admin/managers" class="nav-link" title="{{__('admin.Managers')}}">
                                     <i class="fas fa-users"></i>
                                     <p>{{__('admin.Managers')}}</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/supporters" class="nav-link" title="{{__('admin.Supporters')}}">
+                                    <i class="fas fa-headphones"></i>
+                                    <p>{{__('admin.Supporters')}}</p>
                                 </a>
                             </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" title="تادتا افغا">
-                        <i class="fa fa-facebook"></i>
-                        <p>افلا تلا</p>
+                    <a href="#" class="nav-link" title="{{__('admin.Training')}}">
+                        <i class="fas fa-book-reader"></i>
+                        <p>{{__('admin.Training')}}</p>
                     </a>
                 </li>
             </ul>

@@ -22,14 +22,14 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav mr-auto">
         <li class="nav-item d-done d-sm-inline-block">
-            <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+            <a href="{{ route('admin.logout') }}" class="nav-link" >
                 <i class="nav-icon fas fa-sign-out-alt"></i>
                 {{ __('Logout') }}
             </a>
-
-            <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none">
+            {{--onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+            <form id="logout-form" action="{{ route('admin.logout') }}" method="post" style="display: none">
                 @csrf
-            </form>
+            </form>--}}
         </li>
     </ul>
 </nav>

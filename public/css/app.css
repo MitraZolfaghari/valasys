@@ -247,3 +247,7 @@ div#command-result {
     overflow-y: scroll;
     height: 400px;
 }
+
+.content-wrapper>.content {
+    padding: 15px .5rem;
+}
