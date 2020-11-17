@@ -45,7 +45,8 @@
         </main>
     </div>
 </div>
-
+<!-- Custom components -->
+@include('shared.dialog')
 <!-- Scripts -->
 <!-- jQuery -->
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>

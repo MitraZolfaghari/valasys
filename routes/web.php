@@ -28,5 +28,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/logout', 'Admin\AdminController@logout')->name('admin.logout');
 
     Route::resource('roles', 'RoleController');
+    Route::resource('users', 'UserController');
 
 });

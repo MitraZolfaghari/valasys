@@ -37,15 +37,15 @@
                     </a>
                     <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="/admin/managers" class="nav-link" title="{{__('admin.Managers')}}">
+                                <a href="/admin/roles" class="nav-link" title="{{__('admin.Roles')}}">
                                     <i class="fas fa-users"></i>
-                                    <p>{{__('admin.Managers')}}</p>
+                                    <p>{{__('admin.Roles')}}</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="/admin/supporters" class="nav-link" title="{{__('admin.Supporters')}}">
+                                <a href="/admin/users" class="nav-link" title="{{__('admin.Users')}}">
                                     <i class="fas fa-headphones"></i>
-                                    <p>{{__('admin.Supporters')}}</p>
+                                    <p>{{__('admin.Users')}}</p>
                                 </a>
                             </li>
                     </ul>

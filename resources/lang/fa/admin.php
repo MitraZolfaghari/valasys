@@ -3,8 +3,8 @@
 return [
 
     'Management' => 'مدیریت',
-    'Managers' => 'مدیران',
-    'Supporters' => 'پشتیبانان',
+    'Roles' => 'نقش‌ها',
+    'Users' => 'کاربران',
     'Training' => 'آموزش',
     'Create' => 'ایجاد',
 

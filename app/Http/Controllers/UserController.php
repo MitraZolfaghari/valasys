@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\RoleStore;
-use App\Http\Requests\RoleUpdate;
-use App\Role;
+use App\Http\Requests\UserStore;
+use App\Http\Requests\UserUpdate;
+use App\User;
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::all();
-        return view('admin.role.index', compact('roles'));
+        $users = User::all();
+        return view('admin.user.index', compact('users'));
     }
 
     /**
@@ -27,7 +27,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('admin.role.create');
+        return view('admin.user.create');
     }
 
     /**
@@ -36,61 +36,61 @@ class RoleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(RoleStore $request)
+    public function store(UserStore $request)
     {
-        Role::create($request->all());
-        return redirect()->route('roles.index');
+        //dd($request->all());
+        User::create($request->all());
+        return redirect()->route('users.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $role = Role::findOrFail($id);
-        return view('admin.role.show', compact('role'));
+        $user = User::findOrFail($id);
+        return view('admin.user.show', compact('user'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $role = Role::findOrFail($id);
-        return view('admin.role.edit', compact('role'));
+        $user = User::findOrFail($id);
+        return view('admin.user.edit', compact('user'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param RoleUpdate $request
-     * @param $id
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(RoleUpdate $request, $id)
+    public function update(UserUpdate $request, $id)
     {
-        $role = Role::findOrFail($id);
-        $role->update($request->all());
-        return  redirect()->route('roles.index');
+        $user = User::findOrFail($id);
+        $user->update($request->all());
+        return  redirect()->route('users.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $role = Role::findOrFail($id);
-        $role->delete();
-        return redirect()->route('roles.index');
-
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->route('users.index');
     }
 }

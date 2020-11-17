@@ -10,6 +10,16 @@
     "Home": "خانه",
     "Dashboard": "داشبورد",
     "Logout": "خروج",
+    "Confirm": "تایید",
+    "confirm": "تایید",
     "Create": "ایجاد",
-    "create": "ایجاد"
+    "create": "ایجاد",
+    "Edit": "ویرایش",
+    "edit": "ویرایش",
+    "Show": "نمایش",
+    "show": "نمایش",
+    "Save": "ذخیره",
+    "save": "ذخیره",
+    "Delete": "حذف",
+    "delete": "حذف"
 }
