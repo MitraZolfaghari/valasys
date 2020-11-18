@@ -36,6 +36,34 @@
                         </div>
                     </div>
 
+                    <div class="form-group row">
+                        <label for="username" class="col-sm-3 col-form-label text-right">{{ __('user.username') }}</label>
+                        <div class="col-sm-9">
+                            <div class="form-control-plaintext">{{ $user->username }}</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="mobile" class="col-sm-3 col-form-label text-right">{{ __('user.mobile') }}</label>
+                        <div class="col-sm-9">
+                            <div class="form-control-plaintext">{{ $user->mobile }}</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-3 col-form-label text-right">{{ __('user.email') }}</label>
+                        <div class="col-sm-9">
+                            <div class="form-control-plaintext">{{ $user->email }}</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="status" class="col-sm-3 col-form-label text-right">{{ __('user.status') }}</label>
+                        <div class="col-sm-9">
+                            <div class="form-control-plaintext">{{ $user->isEnable() }}</div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="card-footer">

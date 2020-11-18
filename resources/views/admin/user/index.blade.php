@@ -40,14 +40,17 @@
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->isEnable() }}</td>
                                 <td>
-                                    <a href="{{ route('roles.show', $user) }}" class="btn btn-primary btn-xs" title="{{ __('Show') }}">
+                                    <a href="{{ route('users.show', $user) }}" class="btn btn-primary btn-xs" title="{{ __('Show') }}">
                                         <i class="fas fa-folder"></i> {{ __('Show') }}
                                     </a>
-                                    <a href="{{ route('roles.edit', $user) }}" class="btn btn-info btn-xs" title="{{ __('Edit') }}">
+                                    <a href="{{ route('users.edit', $user) }}" class="btn btn-info btn-xs" title="{{ __('Edit') }}">
                                         <i class="fas fa-pencil-alt"></i> {{ __('Edit') }}
                                     </a>
-                                    <a href="{{ route('roles.destroy', $user) }}" class="btn btn-danger btn-xs delete" title="{{ __('Delete') }}" data-toggle="modal" data-target="#dialog" data-whatever="{{ __('Confirm') . __('Delete') }}">
+                                    <a href="{{ route('users.destroy', $user) }}" class="btn btn-danger btn-xs delete" title="{{ __('Delete') }}" data-toggle="modal" data-target="#dialog" data-whatever="{{ __('Confirm') . __('Delete') }}">
                                         <i class="fas fa-trash"></i> {{ __('Delete') }}
+                                    </a>
+                                    <a href="{{ route('users.role', $user->getKey()) }}" class="btn btn-warning btn-xs" title="{{ __('Assign Role') }}">
+                                        <i class="fas fa-user-tag"></i> {{ __('Assign Role') }}
                                     </a>
                                 </td>
                             </tr>

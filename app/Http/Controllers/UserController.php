@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserStore;
 use App\Http\Requests\UserUpdate;
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -38,7 +39,6 @@ class UserController extends Controller
      */
     public function store(UserStore $request)
     {
-        //dd($request->all());
         User::create($request->all());
         return redirect()->route('users.index');
     }
@@ -91,6 +91,22 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
         $user->delete();
+        return redirect()->route('users.index');
+    }
+
+    public function showRoleForm($id)
+    {
+        $user = User::findOrFail($id);
+        $roles = Role::all();
+        $assignedRoles = $user->roles()->get()->pluck('id')->toArray();
+        return view('admin.user.role', compact('user', 'roles', 'assignedRoles'));
+    }
+
+    public function assignRole(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+        $roles = $request->roles;
+        $user->roles()->sync($roles);
         return redirect()->route('users.index');
     }
 }

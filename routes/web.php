@@ -30,4 +30,9 @@ Route::prefix('admin')->group(function () {
     Route::resource('roles', 'RoleController');
     Route::resource('users', 'UserController');
 
+    Route::prefix('users')->name('users.')->group(function () {
+        Route::get('/{user}/roles', 'UserController@showRoleForm')->name('role');
+        Route::post('/{user}/roles', 'UserController@assignRole');
+    });
+
 });

@@ -18,4 +18,5 @@ return [
     'last_login_at' => 'آخرین ورود',
     'old_password' => 'کلمه عبور قبلی',
     'password_confirmation' => 'تایید کلمه عبور',
+    'role' => 'نقش کاربری'
 ];

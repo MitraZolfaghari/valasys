@@ -24,10 +24,10 @@ class UserUpdate extends FormRequest
     public function rules()
     {
         return [
-            'username' => 'required|string|unique:users,username,' . $this->route('user')->id,
+            'username' => 'required|string|unique:users,username,' . $this->route('user'),
             'fname' => 'required',
             'lname' => 'required',
-            'email' => 'email|unique:users',
+            'email' => 'email|unique:users,email,' . $this->route('user'),
         ];
     }
 }

@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'mobile', 'is_enable', 'last_login_at', 'login_at',
+        'fname', 'lname', 'username', 'email', 'password', 'mobile', 'is_enable', 'last_login_at', 'login_at',
     ];
 
     /**
@@ -39,7 +39,7 @@ class User extends Authenticatable
 
     public function roles()
     {
-        return $this->belongsToMany('App\Models\Role');
+        return $this->belongsToMany('App\Role');
     }
 
     public function isEnable()
