@@ -21,15 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="529ffb04-1d1b-4b2e-aee5-a20d240d58ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +216,9 @@
       <workItem from="1605416375199" duration="24425000" />
       <workItem from="1605503033373" duration="19886000" />
       <workItem from="1605587839416" duration="22637000" />
-      <workItem from="1605675664582" duration="17345000" />
+      <workItem from="1605675664582" duration="19355000" />
+      <workItem from="1605934759705" duration="17752000" />
+      <workItem from="1606021429703" duration="10476000" />
     </task>
     <servers />
   </component>
@@ -247,18 +242,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="456" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1605439890013" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605524545507">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605944405481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605524545507" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605944405481" />
     <state x="367" y="0" width="646" height="728" key="#phpunit.xml" timestamp="1602592890331">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="367" y="0" width="646" height="728" key="#phpunit.xml/0.0.1366.728@0.0.1366.728" timestamp="1602592890331" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1605595665548">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1605940670159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605595665548" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605940670159" />
     <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603786934331">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

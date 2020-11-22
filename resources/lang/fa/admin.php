@@ -7,5 +7,6 @@ return [
     'Users' => 'کاربران',
     'Training' => 'آموزش',
     'Create' => 'ایجاد',
+    'Menus' => 'منوها',
 
 ];

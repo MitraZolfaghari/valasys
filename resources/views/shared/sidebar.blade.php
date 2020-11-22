@@ -36,18 +36,24 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="/admin/roles" class="nav-link" title="{{__('admin.Roles')}}">
-                                    <i class="fas fa-users"></i>
-                                    <p>{{__('admin.Roles')}}</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/admin/users" class="nav-link" title="{{__('admin.Users')}}">
-                                    <i class="fas fa-headphones"></i>
-                                    <p>{{__('admin.Users')}}</p>
-                                </a>
-                            </li>
+                        <li class="nav-item">
+                            <a href="/admin/roles" class="nav-link" title="{{__('admin.Roles')}}">
+                                <i class="fas fa-users"></i>
+                                <p>{{__('admin.Roles')}}</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/users" class="nav-link" title="{{__('admin.Users')}}">
+                                <i class="fas fa-headphones"></i>
+                                <p>{{__('admin.Users')}}</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/menus" class="nav-link" title="{{__('admin.Menus')}}">
+                                <i class="fas fa-th-list"></i>
+                                <p>{{__('admin.Menus')}}</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
