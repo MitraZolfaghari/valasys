@@ -14,7 +14,7 @@ return [
     'mobile' => 'تلفن همراه',
     'email' => 'ایمیل',
     'email_verified_at' => 'تاریخ تایید',
-    'status' => 'وضعیت',
+    'is_enable' => 'فعال',
     'last_login_at' => 'آخرین ورود',
     'old_password' => 'کلمه عبور قبلی',
     'password_confirmation' => 'تایید کلمه عبور',

@@ -38,29 +38,52 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="/admin/roles" class="nav-link" title="{{__('admin.Roles')}}">
-                                <i class="fas fa-users"></i>
+                                <i class="fas fa-bars"></i>
                                 <p>{{__('admin.Roles')}}</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="/admin/users" class="nav-link" title="{{__('admin.Users')}}">
-                                <i class="fas fa-headphones"></i>
+                                <i class="fas fa-bars"></i>
                                 <p>{{__('admin.Users')}}</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="/admin/menus" class="nav-link" title="{{__('admin.Menus')}}">
-                                <i class="fas fa-th-list"></i>
+                                <i class="fas fa-bars"></i>
                                 <p>{{__('admin.Menus')}}</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" title="{{__('admin.Training')}}">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
                         <i class="fas fa-book-reader"></i>
-                        <p>{{__('admin.Training')}}</p>
+                        <p>
+                            {{__('admin.Training')}}
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/admin/academies" class="nav-link" title="{{__('admin.Academies')}}">
+                                <i class="fas fa-bars"></i>
+                                <p>{{__('admin.Academies')}}</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/universities" class="nav-link" title="{{__('admin.Universities')}}">
+                                <i class="fas fa-bars"></i>
+                                <p>{{__('admin.Universities')}}</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/courses" class="nav-link" title="{{__('admin.Courses')}}">
+                                <i class="fas fa-bars"></i>
+                                <p>{{__('admin.Courses')}}</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>

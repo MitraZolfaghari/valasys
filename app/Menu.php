@@ -20,6 +20,11 @@ class Menu extends Model
         return $this->hasMany('App\Menu', 'parent_id');
     }
 
+    public function isEnable()
+    {
+        return $this->is_enable ? __('shared.yes') : __('shared.no');
+    }
+
     public function getItemsByParent($id = null, $except = null)
     {
         return $this->whereParentId($id)->whereKeynot($except)->get();

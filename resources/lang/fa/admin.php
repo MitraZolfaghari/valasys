@@ -8,5 +8,8 @@ return [
     'Training' => 'آموزش',
     'Create' => 'ایجاد',
     'Menus' => 'منوها',
+    'Academies' => 'آموزشگاه‌ها',
+    'Universities' => 'دانشگاه‌ها',
+    'Courses' => 'دوره‌های آموزشی',
 
 ];

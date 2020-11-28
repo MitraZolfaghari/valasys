@@ -11,5 +11,5 @@ return [
     'name' => 'نام',
     'parent_id' => 'والد',
     'description' => 'توضیح',
-    'is_enable' => 'وضعیت',
+    'is_enable' => 'فعال',
 ];

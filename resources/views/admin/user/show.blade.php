@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <h3 class="card-title">{{__('user.Show User')}}</h3>
                     <div class="card-tools">
-
+                        @include('shared.back_button')
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="status" class="col-sm-3 col-form-label text-right">{{ __('user.status') }}</label>
+                        <label for="status" class="col-sm-3 col-form-label text-right">{{ __('user.is_enable') }}</label>
                         <div class="col-sm-9">
                             <div class="form-control-plaintext">{{ $user->isEnable() }}</div>
                         </div>

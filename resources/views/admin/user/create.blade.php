@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="is_enable" class="col-sm-3 col-form-label text-right">{{ __('user.status') }}</label>
+                            <label for="is_enable" class="col-sm-3 col-form-label text-right">{{ __('user.is_enable') }}</label>
                             <div class="col-sm-9">
                                 <div class="icheck-success icheck-inline">
                                     <input type="radio" name="is_enable" id="is_enable1" class="form-check-input @error('is_enable') is-invalid @enderror" value="1" checked>

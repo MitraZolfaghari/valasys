@@ -24,6 +24,7 @@
                             <th>{{ __('menu.slug') }}</th>
                             <th>{{ __('menu.parent_id') }}</th>
                             <th>{{ __('menu.description') }}</th>
+                            <th>{{ __('menu.is_enable') }}</th>
                             <th>{{ __('Action') }}</th>
                         </tr>
                         </thead>
@@ -35,6 +36,7 @@
                                 <td>{{ $menu->slug }}</td>
                                 <td>{{ optional($menu->parent)->name }}</td>
                                 <td>{{ $menu->description }}</td>
+                                <td>{{ $menu->isEnable() }}</td>
                                 <td>
                                     <a href="{{ route('menus.show', $menu) }}" class="btn btn-primary btn-xs" title="{{ __('Show') }}">
                                         <i class="fas fa-folder"></i> {{ __('Show') }}

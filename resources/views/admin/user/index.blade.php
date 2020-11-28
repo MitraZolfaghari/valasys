@@ -25,7 +25,7 @@
                             <th>{{ __('user.username') }}</th>
                             <th>{{ __('user.mobile') }}</th>
                             <th>{{ __('user.email') }}</th>
-                            <th>{{ __('user.status') }}</th>
+                            <th>{{ __('user.is_enable') }}</th>
                             <th>{{ __('Action') }}</th>
                         </tr>
                         </thead>

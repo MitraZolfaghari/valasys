@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\MenuStore;
+use App\Http\Requests\MenuUpdate;
 use App\Menu;
 use Illuminate\Http\Request;
 
@@ -47,9 +48,10 @@ class MenuController extends Controller
      * @param  \App\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function show(Menu $menu)
+    public function show($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        return view('admin.menu.show', compact('menu'));
     }
 
     /**
@@ -58,9 +60,10 @@ class MenuController extends Controller
      * @param  \App\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function edit(Menu $menu)
+    public function edit($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        return view('admin.menu.edit', compact('menu'));
     }
 
     /**
@@ -70,9 +73,11 @@ class MenuController extends Controller
      * @param  \App\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Menu $menu)
+    public function update(MenuUpdate $request, $id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        $menu->update($request->all());
+        return  redirect()->route('menus.index');
     }
 
     /**
@@ -81,8 +86,10 @@ class MenuController extends Controller
      * @param  \App\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Menu $menu)
+    public function destroy($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        $menu->delete();
+        return redirect()->route('menus.index');
     }
 }
