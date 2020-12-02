@@ -8,4 +8,6 @@ return [
     'id' => 'ID',
     'Edit Academy' => 'ویرایش آموزشگاه',
     'Show Academy' => 'نمایش آموزشگاه',
+    'description' => 'توضیح',
+    'slug' => 'کد',
 ];

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UniversityStore;
+use App\Http\Requests\UniversityUpdate;
 use App\University;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,8 @@ class UniversityController extends Controller
      */
     public function index()
     {
-        //
+        $universities = University::all();
+        return view('admin.university.index', compact('universities'));
     }
 
     /**
@@ -24,7 +27,7 @@ class UniversityController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.university.create');
     }
 
     /**
@@ -33,9 +36,10 @@ class UniversityController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UniversityStore $request)
     {
-        //
+        University::create($request->all());
+        return redirect()->route('universities.index');
     }
 
     /**
@@ -44,9 +48,10 @@ class UniversityController extends Controller
      * @param  \App\University  $university
      * @return \Illuminate\Http\Response
      */
-    public function show(University $university)
+    public function show($id)
     {
-        //
+        $university = University::findOrFail($id);
+        return view('admin.university.show', compact('university'));
     }
 
     /**
@@ -55,9 +60,10 @@ class UniversityController extends Controller
      * @param  \App\University  $university
      * @return \Illuminate\Http\Response
      */
-    public function edit(University $university)
+    public function edit($id)
     {
-        //
+        $university = University::findOrFail($id);
+        return view('admin.university.edit', compact('university'));
     }
 
     /**
@@ -67,9 +73,11 @@ class UniversityController extends Controller
      * @param  \App\University  $university
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, University $university)
+    public function update(UniversityUpdate $request, $id)
     {
-        //
+        $university = University::findOrFail($id);
+        $university->update($request->all());
+        return  redirect()->route('universities.index');
     }
 
     /**
@@ -78,8 +86,10 @@ class UniversityController extends Controller
      * @param  \App\University  $university
      * @return \Illuminate\Http\Response
      */
-    public function destroy(University $university)
+    public function destroy($id)
     {
-        //
+        $university = University::findOrFail($id);
+        $university->delete();
+        return redirect()->route('universities.index');
     }
 }

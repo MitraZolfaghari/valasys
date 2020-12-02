@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Academy extends Model
 {
-    //
+    protected $fillable = [
+        'slug', 'name', 'description',
+    ];
 }

@@ -31,6 +31,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('users', 'UserController');
     Route::resource('menus', 'MenuController');
     Route::resource('academies', 'AcademyController');
+    Route::resource('universities', 'UniversityController');
 
     Route::prefix('users')->name('users.')->group(function () {
         Route::get('/{user}/roles', 'UserController@showRoleForm')->name('role');

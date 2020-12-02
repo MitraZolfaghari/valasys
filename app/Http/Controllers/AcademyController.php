@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Academy;
+use App\Http\Requests\AcademyStore;
+use App\Http\Requests\AcademyUpdate;
 use Illuminate\Http\Request;
 
 class AcademyController extends Controller
@@ -26,7 +28,7 @@ class AcademyController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.academy.create');
     }
 
     /**
@@ -35,9 +37,10 @@ class AcademyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AcademyStore $request)
     {
-        //
+        Academy::create($request->all());
+        return redirect()->route('academies.index');
     }
 
     /**
@@ -46,9 +49,10 @@ class AcademyController extends Controller
      * @param  \App\Academy  $academy
      * @return \Illuminate\Http\Response
      */
-    public function show(Academy $academy)
+    public function show($id)
     {
-        //
+        $academy = Academy::findOrFail($id);
+        return view('admin.academy.show', compact('academy'));
     }
 
     /**
@@ -57,9 +61,10 @@ class AcademyController extends Controller
      * @param  \App\Academy  $academy
      * @return \Illuminate\Http\Response
      */
-    public function edit(Academy $academy)
+    public function edit($id)
     {
-        //
+        $academy = Academy::findOrFail($id);
+        return view('admin.academy.edit', compact('academy'));
     }
 
     /**
@@ -69,9 +74,11 @@ class AcademyController extends Controller
      * @param  \App\Academy  $academy
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Academy $academy)
+    public function update(AcademyUpdate $request, $id)
     {
-        //
+        $academy = Academy::findOrFail($id);
+        $academy->update($request->all());
+        return  redirect()->route('academies.index');
     }
 
     /**
@@ -80,8 +87,10 @@ class AcademyController extends Controller
      * @param  \App\Academy  $academy
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Academy $academy)
+    public function destroy($id)
     {
-        //
+        $academy = Academy::findOrFail($id);
+        $academy->delete();
+        return redirect()->route('academies.index');
     }
 }
